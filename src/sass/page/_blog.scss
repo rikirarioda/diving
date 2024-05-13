@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.blog {
+  @include mq("md") {
+    background-image: url(/src/images/common/Blog-bg.jpg);
+    background-size: contain;
+    background-repeat:  no-repeat;
+    height: rem(500);
+    margin-bottom: rem(350);
+  }
+}
+
+.blog__inner.inner {
+  position: relative;
+  text-align: center;
+  max-width: rem(1129);
+}
+
+.blog__inner::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    width: rem(437); 
+    height: rem(201);
+    top: rem(18);
+    left: calc(50% - min(50vw, rem(620))); 
+    background-image: url(/src/images/common/Blog-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+}
+
+.blog__title {
+  font-family: $eng-font-family;
+  font-size: rem(32);
+  font-weight: $regular;
+  line-height: 0.05em;
+  color: $blue;
+  margin-top: rem(99);
+
+  @include mq("md") {
+    font-size: rem(40);
+    line-height: 1em;
+    color: $white;
+  margin-top: rem(95);
+  }
+}
+
+.blog__sub-title {
+  margin-top: rem(32);
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 0.05em;
+  color: $green;
+
+  @include mq("md") {
+    color: $white;
+    margin-top: rem(18);
+  }
+}
+
+.blog__title span {
+  color: $green;
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.blog__button {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
