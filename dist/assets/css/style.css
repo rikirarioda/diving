@@ -770,6 +770,7 @@ a {
 
 .voice-card__items {
 	margin-top: 1.5rem;
+	max-width: 9.3125rem;
 }
 
 .voice-card__wrap {
@@ -789,10 +790,11 @@ a {
 .voice-card__item-img img {
 	-o-object-fit: cover;
 	aspect-ratio: 151/117;
-	margin-left: 0.9375rem;
+	margin-left: auto;
 	margin-top: 0.625rem;
+	max-width: 9.4375rem;
 	object-fit: cover;
-	width: 89%;
+	width: 100%;
 }
 
 .voice-card__item-text {
@@ -825,6 +827,7 @@ a {
 
 .button {
 	background-color: #408F95;
+	color: #FFFFFF;
 	display: inline-block;
 	padding: 1rem 2.5rem;
 	position: relative;
@@ -839,7 +842,30 @@ a {
 	position: absolute;
 	right: -0.25rem;
 	top: 0.25rem;
-	z-index: 9;
+	z-index: -10;
+}
+
+.button::after {
+	background-color: #FFFFFF;
+	border: 0.0625rem solid #408F95;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+	width: 100%;
+	z-index: -10;
+}
+
+.button:hover {
+	color: #408F95;
+}
+
+.button:hover::after {
+	transform: scale(1, 1);
 }
 
 .button__wrap {
@@ -848,7 +874,6 @@ a {
 }
 
 .button__active {
-	color: #FFFFFF;
 	font-size: 0.875rem;
 	letter-spacing: 0.05em;
 }
@@ -858,44 +883,37 @@ a {
 	border-right: 1px solid #FFFFFF;
 	height: 0.5rem;
 	margin-left: 0.3125rem;
+	position: relative;
 	transform: skew(45deg);
 	width: 2.5rem;
 }
 
-.button__reverse {
-	background-color: #FFFFFF;
-	border: solid 0.0625rem #408F95;
-	display: inline-block;
-	padding: 1rem 2.5rem;
-	position: relative;
-}
-
-.button__reverse::before {
-	border: solid 0.0625rem #408F95;
-	bottom: -0.25rem;
-	content: "";
-	left: 0.25rem;
-	position: absolute;
-	right: -0.25rem;
-	top: 0.25rem;
-	z-index: -1;
-}
-
-.button__active-reverse {
-	color: #408F95;
-	font-size: 0.875rem;
-}
-
-.stickarrow-reverse {
+.button__stickarrow::after {
 	border-bottom: 1px solid #408F95;
 	border-right: 1px solid #408F95;
-	height: 0.5rem;
-	transform: skew(45deg);
-	width: 2.5rem;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+	width: 100%;
+	z-index: -10;
+}
+
+.button__stickarrow {
+	color: #408F95;
+}
+
+.button__stickarrow::after {
+	transform: scale(1, 1);
 }
 
 .colorbox {
 	position: relative;
+	width: 75%;
 }
 
 .color {
@@ -1674,6 +1692,7 @@ html {
 }
 
 .information__img {
+	margin-left: 0.9375rem;
 	max-width: 33.75rem;
 	width: 100%;
 }
@@ -1797,6 +1816,7 @@ html {
 
 .voice-card__items {
 	margin-top: 1.875rem;
+	max-width: none;
 }
 
 .voice-card__wrap {
@@ -1809,7 +1829,6 @@ html {
 	font-size: 1.5rem;
 	font-weight: 400;
 	margin-top: 0.5625rem;
-	max-width: 17.25rem;
 }
 
 .voice-card__item-img img {

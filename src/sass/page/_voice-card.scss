@@ -41,6 +41,7 @@
 .voice-card__box {
   display: flex;
   @include mq("md") {
+    // display: flex;
     justify-content: space-between;
   }
 }
@@ -67,7 +68,9 @@
 
 .voice-card__items {
   margin-top: rem(24);
+  max-width: rem(149);
   @include mq("md") {
+    max-width: none;
     margin-top: rem(30);
   }
 }
@@ -94,16 +97,16 @@
     font-size: rem(24);
     font-weight: $normal;
     margin-top: rem(9);
-    max-width: rem(276);
   }
 }
 
 .voice-card__item-img img {
   margin-top: rem(10);
-  width: 89%;
+  width: 100%;
+  max-width: rem(151);
   aspect-ratio: 151 / 117;
   object-fit: cover;
-  margin-left: rem(15);
+  margin-left: auto;
 
   @include mq("md") {
     margin-top: rem(0);
