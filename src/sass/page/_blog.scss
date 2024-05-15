@@ -9,7 +9,7 @@
 
 .blog::before {
   @include mq("md"){
-      background-image: url(/assets/images/common/Blog-bg.jpg);
+      background-image: url(../images/common/Blog-bg.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -37,7 +37,7 @@
     height: rem(201);
     top: rem(18);
     left: calc(50% - min(50vw, rem(620))); 
-    background-image: url(/assets/images/common/Blog-icon.svg);
+    background-image: url(../images/common/Blog-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

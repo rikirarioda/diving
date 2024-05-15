@@ -10,7 +10,7 @@ jQuery(function ($) {
       $(".js-drawer").fadeToggle();
     });
   });
-  var main_swiper = new Swiper(".swiper", {
+  var main_swiper = new Swiper(".js-main-swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -23,20 +23,15 @@ jQuery(function ($) {
   // キャンペーンカードスワイパー
   var campaign_swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
-    centeredSlides: true,
-    // スライドを中央に配置
     spaceBetween: 24,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     speed: 3000,
-    // loopAdditionalSlides: 1,
-
     autoplay: {
       delay: 2000,
       disableOnInteraction: false
     },
     breakpoints: {
       768: {
-        slidesPerView: 3,
         spaceBetween: 40
       }
     },

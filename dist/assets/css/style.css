@@ -314,10 +314,6 @@ a {
 	margin-right: calc(50% - 50vw);
 }
 
-.campaign__swiper-wrapper {
-	gap: 2.5rem;
-}
-
 .campaign__card {
 	box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
 	height: auto;
@@ -432,7 +428,7 @@ a {
 	margin-top: 2.0625rem;
 }
 
-.campaign__swiper {
+.campaign__swiper-wrap {
 	margin-top: 2.125rem;
 }
 
@@ -454,7 +450,7 @@ a {
 }
 
 .contact-top__inner::before {
-	background-image: url(/assets/images/common/Contact-icon2.svg);
+	background-image: url(../images/common/Contact-icon2.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -533,7 +529,7 @@ a {
 }
 
 .contact-top__page-top::before {
-	background-image: url(/assets/images/common/Contact-icon.svg);
+	background-image: url(../images/common/Contact-icon.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1345,13 +1341,13 @@ a {
 /* 前への矢印カスタマイズ */
 
 .swiper-button-prev::after {
-	background-image: url(/dist/assets/images/common/campaign-icon2.svg);
+	background-image: url(../images/common/campaign-icon2.svg);
 }
 
 /* 次への矢印カスタマイズ */
 
 .swiper-button-next::after {
-	background-image: url(/dist/assets/images/common/campaign-icon1.svg);
+	background-image: url(../images/common/campaign-icon1.svg);
 }
 
 .title-content {
@@ -1404,7 +1400,7 @@ html {
 }
 
 .about-us__inner::before {
-	background-image: url(/assets/images/common/Aboutas-icon.svg);
+	background-image: url(../images/common/Aboutas-icon.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1498,7 +1494,7 @@ html {
 }
 
 .blog::before {
-	background-image: url(/assets/images/common/Blog-bg.jpg);
+	background-image: url(../images/common/Blog-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1512,7 +1508,7 @@ html {
 }
 
 .blog__inner::before {
-	background-image: url(/assets/images/common/Blog-icon.svg);
+	background-image: url(../images/common/Blog-icon.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1591,7 +1587,7 @@ html {
 	margin-top: 2.3125rem;
 }
 
-.campaign__swiper {
+.campaign__swiper-wrap {
 	margin-top: 2.5rem;
 }
 
@@ -1608,7 +1604,7 @@ html {
 }
 
 .contact-top__inner::before {
-	background-image: url(/assets/images/common/Contact-icon2.svg);
+	background-image: url(../images/common/Contact-icon2.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1880,7 +1876,7 @@ html {
 }
 
 .voice__inner::before {
-	background-image: url(/assets/images/common/Voice-icon2.svg);
+	background-image: url(../images/common/Voice-icon2.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1894,7 +1890,7 @@ html {
 }
 
 .voice__inner::after {
-	background-image: url(/assets/images/common/Voice-icon1.svg);
+	background-image: url(../images/common/Voice-icon1.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -9,7 +9,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  const main_swiper = new Swiper(".swiper", {
+  const main_swiper = new Swiper(".js-main-swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -22,25 +22,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // キャンペーンカードスワイパー
   const campaign_swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
-    centeredSlides: true, // スライドを中央に配置
     spaceBetween: 24,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     speed: 3000,
-    // loopAdditionalSlides: 1,
 
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
 
-
     breakpoints: {
       768: {
-        slidesPerView: 3,
         spaceBetween: 40,
       },
     },
-
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

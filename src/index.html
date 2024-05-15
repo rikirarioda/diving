@@ -22,12 +22,12 @@
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?20240516002">
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/script.js?20240516002" defer></script>
   <script src="./assets/js/jquery.inview.min.js" defer></script>
 
   <!--Google font-->
@@ -183,7 +183,7 @@
     <!-- メインビュー -->
     <div class="mv js-mv">
       <div class="mv__inner">
-        <div class="mv__slider swiper">
+        <div class="mv__slider swiper js-main-swiper">
           <div class="swiper-wrapper">
             <!-- "swiper-slide"が増えるごとにスライドの数が増える -->
             <div class="swiper-slide">
@@ -224,8 +224,8 @@
             <p class="campaign__sub-title sub-title">キャンペーン</p>
           </div>
         </div>
-        <div class="campaign__swiper-wrap campaign-swiper swiper">
-          <div class="campaign__swiper js-campaign-swiper">
+        <div class="campaign__swiper-wrap campaign-swiper js-campaign-swiper swiper">
+          <!-- <div class="campaign__swiper js-campaign-swiper swiper"> -->
             <ul class="campaign__swiper-wrapper swiper-wrapper">
               <li class="campaign__card swiper-slide">
                 <a href="#">
@@ -307,8 +307,88 @@
                   </div>
                 </a>
               </li>
+              <li class="campaign__card swiper-slide">
+                <a href="#">
+                  <div class="campaign__card-img">
+                    <img src="./assets/images/common/campaign1.jpg" alt="たくさんの魚が泳いでいる様子">
+                  </div>
+                  <div class="campaign__card-body">
+                    <div class="campaign__card-meta">
+                      <span class="campaign__card-tag">ライセンス講習</span>
+                      <p class="campaign__card-category">ライセンス取得</p>
+                    </div>
+                    <div class="campaign__card-contents">
+                      <p class="campaign__card-title">全部コミコミ(お一人様)</p>
+                      <div class="campaign__card-price--body">
+                        <span class="campaign__card-original--price">¥56,000</span>
+                        <span class="campaign__card-discounted--price">¥46,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="campaign__card swiper-slide">
+                <a href="#">
+                  <div class="campaign__card-img">
+                    <img src="./assets/images/common/campaign2.jpg" alt="船が出向する様子">
+                  </div>
+                  <div class="campaign__card-body">
+                    <div class="campaign__card-meta">
+                      <span class="campaign__card-tag">体験ダイビング</span>
+                      <p class="campaign__card-category">貸切体験ダイビング</p>
+                    </div>
+                    <div class="campaign__card-contents">
+                      <p class="campaign__card-title">全部コミコミ(お一人様)</p>
+                      <div class="campaign__card-price--body">
+                        <span class="campaign__card-original--price">¥24,000</span>
+                        <span class="campaign__card-discounted--price">¥18,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="campaign__card swiper-slide">
+                <a href="#">
+                  <div class="campaign__card-img">
+                    <img src="./assets/images/common/campaign3.jpg" alt="たくさんのクラゲが泳いでいる様子">
+                  </div>
+                  <div class="campaign__card-body">
+                    <div class="campaign__card-meta">
+                      <span class="campaign__card-tag">体験ダイビング</span>
+                      <p class="campaign__card-category">ナイトダイビング</p>
+                    </div>
+                    <div class="campaign__card-contents">
+                      <p class="campaign__card-title">全部コミコミ(お一人様)</p>
+                      <div class="campaign__card-price--body">
+                        <span class="campaign__card-original--price">¥10,000</span>
+                        <span class="campaign__card-discounted--price">¥8,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="campaign__card swiper-slide">
+                <a href="#">
+                  <div class="campaign__card-img">
+                    <img src="./assets/images/common/campaign4.jpg" alt="ファンダイビングしている様子">
+                  </div>
+                  <div class="campaign__card-body">
+                    <div class="campaign__card-meta">
+                      <span class="campaign__card-tag">ファンダイビング</span>
+                      <p class="campaign__card-category">貸し切りファンダイビング</p>
+                    </div>
+                    <div class="campaign__card-contents">
+                      <p class="campaign__card-title">全部コミコミ(お一人様)</p>
+                      <div class="campaign__card-price--body">
+                        <span class="campaign__card-original--price">¥20,000</span>
+                        <span class="campaign__card-discounted--price">¥16,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </div>
         <a href="#" class="campaign__button button">
           <div class="button__wrap">
