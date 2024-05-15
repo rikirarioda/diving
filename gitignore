@@ -1,5 +1,5 @@
 .vscode/
-node_modules
-package-lock.json
+_gulp/node_modules/
+_gulp/package-lock.json
 .DS_Store
 .node-versions
