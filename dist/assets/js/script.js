@@ -27,7 +27,7 @@ jQuery(function ($) {
     slidesPerView: "auto",
     speed: 3000,
     autoplay: {
-      delay: 2000,
+      delay: 2200,
       disableOnInteraction: false
     },
     breakpoints: {
