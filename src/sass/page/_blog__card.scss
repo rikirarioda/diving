@@ -36,12 +36,12 @@
   object-fit: cover;
 }
 
-.blog-card__item-content {
-  padding: prem(20) prem(25) prem(25);
-  @include mq(md){
-      padding: prem(25) prem(30) prem(30);
-  }
-}
+// .blog-card__item-content {
+//   padding: rem(20) rem(25) rem(25);
+//   @include mq(md){
+//       padding: rem(25) rem(30) rem(30);
+//   }
+// }
 
 .blog-card__item-category {
   font-size: rem(12);
