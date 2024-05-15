@@ -26,7 +26,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     slidesPerView: "auto",
     speed: 3000,
     autoplay: {
-      delay: 2200,
+      delay: 2000,
       disableOnInteraction: false,
     },
 
